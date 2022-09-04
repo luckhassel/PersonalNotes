@@ -14,4 +14,4 @@ The database used is SQL local database. To create the database for the project,
 There are some unit tests that are testing services, that contains the main business logic.
 
 ###
-The server follows an Hexagonal architecture, following the template pattern to design the use cases and also some Facade patterns in some parts of the code. Once you run it, you can do fast tests via Swagger documentation. It uses JWT authentication, protecting all routes that are not allows for the general public.
+The server follows an Hexagonal architecture, following the template pattern to design the use cases and also some Facade patterns in some parts of the code. Once you run it, you can do fast tests via Swagger documentation. It uses JWT authentication, protecting all routes that are not allows for general public.
