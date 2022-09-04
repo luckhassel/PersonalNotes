@@ -1,0 +1,31 @@
+<app-header [displayExit]="true"></app-header>
+<div fxLayout="column" fxLayoutAlign="center center" class="form">
+    <button mat-button (click)="back()" class="buttons">Back</button>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="mat-elevation-z5 form-edit" fxLayout="column" fxLayoutAlign="center center">
+        <mat-form-field>
+            <mat-label>Subject</mat-label>
+            <input 
+            class="subject"
+            matInput 
+            fxFlex="30"
+            type="text" 
+            formControlName="subject">
+        </mat-form-field>
+        <mat-form-field class="description">
+            <mat-label>Description</mat-label>
+            <input 
+            matInput 
+            type="text" 
+            formControlName="description">
+        </mat-form-field>
+        <div fxLayout="row" fxLayoutGap="250px">
+            <mat-form-field>
+                <input matInput type="datetime-local" placeholder="Start date" formControlName="startDate">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="datetime-local" placeholder="End date" formControlName="endDate">
+            </mat-form-field>
+        </div>
+        <button mat-stroked-button color="primary" [disabled]="invalidForm()" type="submit">{{documentId ? "Update" : "Create"}}</button>
+    </form>
+</div>

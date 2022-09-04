@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div fxLayout="column" fxLayoutAlign="center center" class="form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="center center" class="mat-elevation-z5 login-form">
+    <h2><strong>{{isRegister? "Register" : "Login"}}</strong></h2>
+      <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input 
+          matInput 
+          fxFlex="30"
+          type="text" 
+          formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input 
+        matInput 
+        type="password" 
+        formControlName="password">
+      </mat-form-field>
+      <button mat-stroked-button color="primary" [disabled]="invalidForm()" type="submit">{{isRegister? "Register" : "Login"}}</button>
+      <p class="pointer" [routerLink]="[isRegister? '': 'register' ]"><br><strong>{{isRegister? "Login" : "Register"}}</strong></p>
+  </form>
+</div>

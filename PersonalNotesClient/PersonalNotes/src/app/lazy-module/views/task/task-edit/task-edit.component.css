@@ -1,0 +1,17 @@
+.form {
+    height: 70%;
+}
+
+.form-edit {
+    width: 90%;
+    padding: 5%;
+}
+
+.description{
+    width: 50%;
+    height: 50%;
+}
+
+.buttons{
+    padding-bottom: 2%;
+  }

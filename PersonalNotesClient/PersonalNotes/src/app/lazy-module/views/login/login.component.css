@@ -1,0 +1,12 @@
+.form {
+    height: 70%;
+  }
+
+.pointer{
+    cursor: pointer;
+}
+
+.login-form{
+  width: 50%;
+  height: 50%;
+}
