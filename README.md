@@ -4,7 +4,6 @@
 In order to install client dependencies, you should access "PersonalNotesClient" folder and run "npm install" command.
 Once you have all done, just run the project using "ng serve". It will start the server on port "4200".
 
-### Features
 The client has an interceptor to send the JWT every time it communicates with the API. Also, it has a guard that does not allow unlogged users to access private events. It also display the errors to the users, so they can be aware about what went wrong in the operations.
 
 ## Server
